@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <form action="/jquery4.html" id="formu">
+      Escribe tu nombre:
+      <input type="text" name="nombre" value="" id="name" />     
+      <br/>     
+      <input type="submit" value="Enviar" />
+    </form>
+
+
+    <script type="text/javascript">
+      $('#formu').on('submit', function(event){
+        if($('#name').val() == ""){
+          event.preventDefault();
+          alert('Rellena el campo');
+        };
+      });
+    </script>
+
+  </body>
+</html>

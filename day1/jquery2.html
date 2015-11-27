@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div>
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt vero et nulla consectetur deserunt, cupiditate? Quisquam magni a corrupti illo accusamus quasi reiciendis atque dolores? Hic excepturi optio eum. Fugit!</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et provident blanditiis, facilis totam, tempore numquam earum id minus quidem quasi? Perferendis incidunt pariatur provident magni at, necessitatibus corporis dolor modi.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium earum molestias assumenda praesentium molestiae, eius incidunt reprehenderit iste nobis exercitationem aut labore voluptate natus quo commodi expedita quidem est. Aliquid!</p>
+    </div>
+    <button class="btn1">Borrar</button>
+    <button class="btn2">Multicolor</button>
+    <script type="text/javascript">
+      $('.btn1').on('click', function(){
+        $('div').fadeToggle(500);
+      });
+      $('.btn2').on('click', function(){
+        // $('*').css({'background-color': "red"});
+        $('div').toggleClass('unicorn');
+      });
+    </script>
+
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <input type="text" id="info" value="Hello world">
+
+    <p>Add the h1 on top of this paragrph.</p>
+
+    <script type="text/javascript">
+      $(document).on('ready', function(){
+        var text = $('#info').val();
+        var title = "<h1>" + text + "</h1>"
+        $('p').before(title);
+
+      });
+    </script>
+
+  </body>
+</html>
